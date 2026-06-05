@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Podcast Landing Page</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+
+<header class="navbar">
+
+    <div class="logo">
+        <img src="https://i.pravatar.cc/150?img=12" alt="">
+        <h2>RohitPrashar</h2>
+    </div>
+
+    <ul class="nav-links" id="menu">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Exclusive Podcasts</a></li>
+        <li><a href="#">Podcast</a></li>
+        <li><a href="#">Course</a></li>
+        <li><a href="#">Book</a></li>
+        <li><a href="#">Consultation</a></li>
+    </ul>
+
+    <a href="#" class="nav-btn">
+        Book Your Podcast
+    </a>
+
+    <div class="menu-btn" onclick="toggleMenu()">
+        ☰
+    </div>
+
+</header>
+
+<!-- Hero -->
+
+<section class="hero">
+
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+
+        <span>Hello, I'm</span>
+
+        <h1>Rohit Prashar</h1>
+
+        <h2>
+            Build Your Digital Presence
+            with Rohit Prashar
+        </h2>
+
+        <p>
+            With 4 Years Of Experience In Content Creation
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#" class="btn-outline">
+                WATCH MY PODCASTS
+            </a>
+
+            <a href="#" class="btn-primary">
+                Book Your Podcast
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<a href="#" class="whatsapp">
+    💬 Chat with us
+</a>
+
+<script>
+
+function toggleMenu(){
+    document
+    .getElementById("menu")
+    .classList.toggle("show");
+}
+
+</script>
+
+</body>
+</html>
