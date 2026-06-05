@@ -35,7 +35,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
     <!-- LOGO -->
     <div class="logo">
-        <h2>ZANI<span>FEST</span></h2>
+        <h2>A<span>IHIL</span></h2>
     </div>
 
     <!-- MENU -->
@@ -158,7 +158,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
             </p>
 
             <a href="#" class="about-btn-custom">
-                Fill & Submit
+                Explore More
             </a>
 
         </div>
@@ -195,7 +195,76 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     </div>
 
 </section>
+<section class="portfolio-showcase-sec">
+<h1 class="recent_tittle">Recent Happenings</h1>
+    <div class="portfolio-wrapper">
 
+        <div class="portfolio-slide active-slide">
+
+            <div class="portfolio-slide-box">
+                <div class="portfolio-info">
+                    <!-- <span class="portfolio-label">Major AirCraft Maintainece Upgrade Program Suceesfull Completed</span> -->
+                    <h2>Major AirCraft Maintainece Upgrade Program </h2>
+                    <p>Duration: OnGoingActivity</p>
+                    <a href="#" class="portfolio-link-btn">12 May 2026</a>
+                </div>
+
+                <div class="portfolio-image-area">
+                    <div class="portfolio-image-card">
+                        <img src="/assests/hero1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="portfolio-slide">
+
+            <div class="portfolio-slide-box">
+                <div class="portfolio-info">
+                    <!-- <span class="portfolio-label">MANAGEMENT</span> -->
+                    <h2>Requirment Driver For Avition Engineer</h2>
+                    <p>Last Date: 15 Jun 2023</p>
+                    <a href="#" class="portfolio-link-btn">View Project →</a>
+                </div>
+
+                <div class="portfolio-image-area">
+                    <div class="portfolio-image-card">
+                        <img src="/assests/hero1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="portfolio-slide">
+
+            <div class="portfolio-slide-box">
+                <div class="portfolio-info">
+                    <!-- <span class="portfolio-label">FINANCE</span> -->
+                    <h2>New Management Application</h2>
+                    <p>Duration: 6 Months</p>
+                    <a href="#" class="portfolio-link-btn">View Project →</a>
+                </div>
+
+                <div class="portfolio-image-area">
+                    <div class="portfolio-image-card">
+                        <img src="/assests/hero1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="portfolio-navigation">
+            <button id="portfolioPrevBtn" class="portfolio-nav-btn">‹</button>
+            <span id="portfolioCounter">1 / 3</span>
+            <button id="portfolioNextBtn" class="portfolio-nav-btn">›</button>
+        </div>
+
+    </div>
+
+</section>
 
 <footer class="ft-main">
 
@@ -203,7 +272,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
         <!-- Column 1 -->
         <div class="ft-box">
-            <h2>Z<span>ANIFEST</span></h2>
+            <h2>Web<span>Designer</span></h2>
             <p>
                 AI Assets Holding Limited (AIAHIL) is a Goverment of India </p>
         </div>
@@ -265,6 +334,59 @@ closeBtn.onclick = () => {
 };
 </script>
 
+<script>
+const portfolioSlides =
+document.querySelectorAll(".portfolio-slide");
+
+const portfolioPrevBtn =
+document.getElementById("portfolioPrevBtn");
+
+const portfolioNextBtn =
+document.getElementById("portfolioNextBtn");
+
+const portfolioCounter =
+document.getElementById("portfolioCounter");
+
+let currentPortfolioSlide = 0;
+
+function showPortfolioSlide(index){
+
+    portfolioSlides.forEach(slide=>{
+        slide.classList.remove("active-slide");
+    });
+
+    portfolioSlides[index]
+        .classList.add("active-slide");
+
+    portfolioCounter.innerText =
+        `${index + 1} / ${portfolioSlides.length}`;
+}
+
+portfolioNextBtn.addEventListener("click",()=>{
+
+    currentPortfolioSlide++;
+
+    if(currentPortfolioSlide >= portfolioSlides.length){
+        currentPortfolioSlide = 0;
+    }
+
+    showPortfolioSlide(currentPortfolioSlide);
+});
+
+portfolioPrevBtn.addEventListener("click",()=>{
+
+    currentPortfolioSlide--;
+
+    if(currentPortfolioSlide < 0){
+        currentPortfolioSlide =
+        portfolioSlides.length - 1;
+    }
+
+    showPortfolioSlide(currentPortfolioSlide);
+});
+
+showPortfolioSlide(currentPortfolioSlide);
+</script>
 <script src="script.js"></script>
 
 </body>
