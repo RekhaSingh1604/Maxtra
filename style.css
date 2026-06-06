@@ -1,4 +1,4 @@
-/* RESET */
+
 *{
     margin:0;
     padding:0;
@@ -117,24 +117,6 @@ nav ul li a:hover{
     cursor:pointer;
 }
 
-/* HERO */
-/* .hero{
-    min-height:70vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-}
-
-.hero h1{
-    font-size:60px;
-    margin-bottom:15px;
-}
-
-.hero p{
-    color:#ccc;
-    font-size:18px;
-} */
 
 /* MOBILE */
 @media(max-width:992px){
@@ -228,7 +210,7 @@ nav ul li a:hover{
 
 .hero {
     height: 100vh;
-    background-image: url("./assests/hero.jpg"); /* 👈 yaha apni image daalo */
+    background-image: url("./assests/hero.jpg"); 
     background-size: cover;
     background-position: center;
     position: relative;
@@ -239,7 +221,7 @@ nav ul li a:hover{
     justify-content: center;
 }
 
-/* DARK OVERLAY */
+
 .overlay {
     position: absolute;
     width: 100%;
@@ -247,7 +229,6 @@ nav ul li a:hover{
     background: rgba(0,0,0,0.55);
 }
 
-/* CENTER CONTENT */
 .hero-content {
     position: relative;
     text-align: center;
@@ -275,7 +256,6 @@ nav ul li a:hover{
     display: flex;
     justify-content: center;
     gap: 15px;
-        /* font-family: 'Courier New', Courier, monospace; */
 
 }
 
@@ -381,16 +361,7 @@ nav ul li a:hover{
 }
 
 /* STACK ORDER */
-.card1{z-index:1;}
-.card2{z-index:2;}
-.card3{z-index:3;}
-.card4{z-index:4;}
-.card5{z-index:5;}
-
-
-/* ========================= */
-/* LARGE LAPTOP */
-/* ========================= */
+.card1{z-index:1;}.card2{z-index:2;}.card3{z-index:3;}.card4{z-index:4;}.card5{z-index:5;}
 
 @media (max-width:1200px){
 
@@ -405,12 +376,7 @@ nav ul li a:hover{
 
 }
 
-/* ========================= */
-/* TABLET */
-/* ========================= */
-
 @media (max-width:992px){
-
     .hero_tittle{
         font-size:40px;
     }
@@ -440,10 +406,6 @@ nav ul li a:hover{
 
 }
 
-/* ========================= */
-/* MOBILE */
-/* ========================= */
-
 @media (max-width:768px){
 
     .hero_tittle{
@@ -456,7 +418,7 @@ nav ul li a:hover{
     }
 
     .stack-card{
-        position:relative; /* sticky remove */
+        position:relative; 
         top:auto;
 
         width:100%;
@@ -486,10 +448,6 @@ nav ul li a:hover{
         line-height:1.6;
     }
 }
-
-/* ========================= */
-/* SMALL MOBILE */
-/* ========================= */
 
 @media (max-width:480px){
 
@@ -622,9 +580,7 @@ nav ul li a:hover{
     }
 }
 
-/* ========================= */
-/* LAPTOP */
-/* ========================= */
+
 
 @media (max-width:992px){
 
@@ -655,9 +611,6 @@ nav ul li a:hover{
     }
 }
 
-/* ========================= */
-/* TABLET */
-/* ========================= */
 
 @media (max-width:768px){
 
@@ -686,9 +639,7 @@ nav ul li a:hover{
     }
 }
 
-/* ========================= */
-/* MOBILE */
-/* ========================= */
+
 
 @media (max-width:576px){
 
@@ -728,9 +679,6 @@ nav ul li a:hover{
     }
 }
 
-/* ========================= */
-/* SMALL MOBILE */
-/* ========================= */
 
 @media (max-width:400px){
 
@@ -1023,17 +971,9 @@ nav ul li a:hover{
 .recent_tittle{
     
     text-align: center;
-    color: #f5a100;
-    font-size: 50px;
-    margin: 50px 0;
-    text-transform: uppercase;
-    /* font-family: 'Courier New', Courier, monospace; */
-    /* background: none; */
+    color: #f5a100; font-size: 50px;    margin: 50px 0;text-transform: uppercase;
 }
 
-/* ==========================
-   RECENT HAPPENINGS SECTION
-========================== */
 
 .portfolio-showcase-sec{
     background:#000;
