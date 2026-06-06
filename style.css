@@ -118,7 +118,7 @@ nav ul li a:hover{
 }
 
 /* HERO */
-.hero{
+/* .hero{
     min-height:70vh;
     display:flex;
     align-items:center;
@@ -134,7 +134,7 @@ nav ul li a:hover{
 .hero p{
     color:#ccc;
     font-size:18px;
-}
+} */
 
 /* MOBILE */
 @media(max-width:992px){
@@ -320,7 +320,8 @@ nav ul li a:hover{
 
 .hero_tittle{
     text-align:center;
-    color:#fff;
+    color:#f5a100;
+    text-transform: uppercase;
     font-size:48px;
     margin:80px 0 30px;
 }
@@ -746,237 +747,7 @@ nav ul li a:hover{
         height:48px;
     }
 }
-.p-hero{
-    min-height:100vh;
-    display:flex;
-    align-items:center;
-    background: radial-gradient(circle at top, #1b2a4a, #0b1220);
-    color:#fff;
-    padding:20px 5%;
-    position:relative;
-    overflow:hidden;
-}
 
-.p-container{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:60px;
-    width:100%;
-}
-
-/* LEFT */
-.p-left{
-    flex:1;
-}
-
-.p-badge{
-    display:inline-block;
-    padding:6px 14px;
-    background:rgba(56,189,248,0.1);
-    border:1px solid rgba(56,189,248,0.3);
-    color:#f5a100;
-    border-radius:20px;
-    font-size:12px;
-    margin-bottom:20px;
-    letter-spacing:2px;
-}
-
-.p-left p{
-    color:#f5a100;
-    font-size:16px;
-    max-width:500px;
-    margin-bottom:25px;
-    line-height:1.6;
-}
-
-/* BUTTONS */
-.p-actions{
-    display:flex;
-    gap:15px;
-    margin-bottom:40px;
-}
-
-.p-btn{
-    padding:12px 22px;
-    border-radius:10px;
-    text-decoration:none;
-    font-weight:600;
-    transition:0.3s;
-}
-
-.p-btn.primary{
-    background:#f5a100;
-    color:#0b1220;
-}
-
-.p-btn.primary:hover{
-    background:#ffb31a;
-}
-
-.p-btn.outline{
-    border:1px solid rgba(255,255,255,0.2);
-    color:#fff;
-}
-
-.p-btn.outline:hover{
-    background:rgba(255,255,255,0.05);
-}
-
-
-/* RIGHT IMAGE */
-.p-right{
-    flex:1;
-    position:relative;
-    display:flex;
-    justify-content:center;
-}
-
-.p-image-card{
-    width:420px;
-    border-radius:20px;
-    overflow:hidden;
-    border:1px solid rgba(255,255,255,0.1);
-    box-shadow:0 20px 60px rgba(0,0,0,0.5);
-}
-
-.p-image-card img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    display:block;
-}
-
-/* GLOW EFFECT */
-.p-glow{
-    position:absolute;
-    width:300px;
-    height:300px;
-    background:#38bdf8;
-    filter:blur(120px);
-    opacity:0.25;
-    top:20%;
-    right:10%;
-}
-
-/* RESPONSIVE */
-@media(max-width:900px){
-    .p-container{
-        flex-direction:column;
-        text-align:center;
-    }
-
-    .p-left h1{
-        font-size:38px;
-    }
-
-    .p-actions{
-        justify-content:center;
-        flex-wrap:wrap;
-    }
-
-    .p-stats{
-        justify-content:center;
-        flex-wrap:wrap;
-    }
-
-    .p-image-card{
-        width:100%;
-        max-width:350px;
-    }
-}
-/* SECTION */
-.ab-sec-v2 {
-    background: #000;
-    color: #fff;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    padding: 100px 8%;
-}
-
-/* WRAPPER */
-.ab-wrapper-v2 {
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 180px 1fr;
-    gap: 40px;
-}
-
-/* LEFT LABEL */
-.ab-label-v2 {
-    padding-top: 10px;
-}
-
-.ab-label-v2 span {
-    color: #f5a100;
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-
-/* CONTENT */
-.ab-content-v2 {
-    max-width: 900px;
-}
-
-.ab-content-v2 h2 {
-    font-size: 2rem;
-    line-height: 1.35;
-    font-weight: 500;
-    margin-bottom: 24px;
-}
-
-.ab-content-v2 p {
-    font-size: 1.5rem;
-    line-height: 1.5;
-    color: #5f5f5f;
-    margin-bottom: 50px;
-}
-
-/* BUTTON */
-.ab-btn-v2 {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    background: #f5a100;
-    color: #000;
-    text-decoration: none;
-    padding: 18px 30px;
-border-radius: 10px;
-    font-size: 18px;
-    font-weight: 600;
-    transition: 0.3s ease;
-}
-
-.ab-btn-v2:hover {
-    background: #ffb31a;
-    transform: translateY(-2px);
-}
-
-.ab-btn-v2 span {
-    font-size: 18px;
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-
-    .ab-wrapper-v2 {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .ab-content-v2 h2 {
-        font-size: 2rem;
-    }
-
-    .ab-content-v2 p {
-        font-size: 1.2rem;
-    }
-}
 /* FOOTER MAIN */
 .ft-main{
     background:#000;
